@@ -1,13 +1,9 @@
-//
 //  AsImageView.h
-//  Machinima3.0
 //
-//  Created by Teo Choong Ping on 2/12/10.
-//  Copyright 2010 FavoriteMedium.com. All rights reserved.
+//  Copyright 2011 Apache License 2.0. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "ImageCacheManager.h"
+//#import "ImageCacheManager.h"
 
 
 @interface AsImageView : UIImageView {

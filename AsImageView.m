@@ -1,14 +1,11 @@
 //
 //  AsImageView.m
-//  Machinima3.0
 //
-//  Created by Teo Choong Ping on 2/12/10.
-//  Copyright 2010 FavoriteMedium.com. All rights reserved.
+//  Copyright 2011 Apache License 2.0. All rights reserved.
 //
 
 #import "AsImageView.h"
 #import <QuartzCore/QuartzCore.h>
-#import "DebugLog.h"
 
 @implementation AsImageView
 
@@ -38,11 +35,11 @@
 	if(url) {
 		[self clearConnection];
 		
-		UIImage *image = (UIImage *)[ImageCacheManager get:url];
-		if (image != nil) {
-			[self displayNewImage:image];
-			return;
-		}
+		/* UIImage *image = (UIImage *)[ImageCacheManager get:url]; */
+		/* if (image != nil) { */
+		/* 	[self displayNewImage:image]; */
+		/* 	return; */
+		/* } */
 		
 		//[self setAlpha:0.2];
 		[self setDefaultImage];
@@ -70,7 +67,6 @@
    // [data release];
     
 	[self displayNewImage:newImg];
-	[ImageCacheManager put:imageUrl objectValue:newImg];
 
 	/*[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDuration:0.4];
